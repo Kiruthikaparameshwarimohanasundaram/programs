@@ -1,0 +1,19 @@
+using System;
+//namespace Helloworld{
+    class Cs{
+    public static void Main(string [] args){
+        int n1,m=0,c=0,i;
+        n1=int.Parse(Console.ReadLine());
+        m=n1/2;
+        for(i=2;i<=m;i++)
+        {
+            if(n1%i==0){
+                Console.Write("Number is not prime");
+                c=1;
+                break;}
+        }if(c==0){
+            Console.Write("Number is Prime");
+        }
+            }
+        }
+        

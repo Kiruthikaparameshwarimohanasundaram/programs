@@ -1,0 +1,13 @@
+using System;
+namespace HelloWorld{
+    class Cs{
+        public static void Main(string [] args){
+            int age;
+            age=int.Parse(Console.ReadLine());
+            if(age>=16 && age<18)
+            Console.WriteLine("Access granted");
+            else
+            Console.WriteLine("Access not granted");
+        }
+    }
+}
