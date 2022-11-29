@@ -1,0 +1,25 @@
+           --------palindrome----
+
+using System;
+namespace HelloWorld{
+    class Cs{
+    static void Main(string [] args)
+    {
+        int num,temp,remainder,rev=0;
+        num=int.Parse(Console.ReadLine());
+        temp=num;
+        while(num>0){
+            remainder=num%10;
+            rev=rev*10+remainder;
+            num/=10;
+        }
+    
+    if(temp==rev){
+        Console.WriteLine("Number is palindrome");
+    }
+    else{
+        Console.WriteLine("Number is not a palindrome");
+    }
+}
+}
+}
