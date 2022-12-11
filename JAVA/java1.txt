@@ -1,0 +1,42 @@
+-------------------------------------JAVA------------------------------------
+
+
+import java.util.*;
+public class  Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String []str=new String[50];
+        int i;
+        for( i=0;i<5;i++){
+           
+            
+            str[i]=sc.next();
+            
+             
+               try{
+                   Thread.sleep(1000);
+               
+    
+                System.out.println(str[i].toUpperCase()+" ");
+               }
+               catch(Exception e){};
+           
+            }
+        
+       
+    }
+}
+
+
+
+
+output:
+------
+  welcome to java world!!!
+
+  WELCOME
+  TO 
+  JAVA 
+  WORLD
+  !!!
+
