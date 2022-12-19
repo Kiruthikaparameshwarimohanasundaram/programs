@@ -1,0 +1,37 @@
+import java.time.LocalDate;
+import java.util.Scanner;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int day=sc.nextInt();
+        int month=sc.nextInt();
+        int year=sc.nextInt();
+        LocalDate yr= LocalDate.of(year,month,day);
+        System.out.println(yr.getDayOfWeek());
+        sc.close();
+        String str="2022-12-19";
+        LocalDate dt=LocalDate.parse(str);
+        System.out.println(dt);
+        LocalDate date=LocalDate.now();
+        LocalDate yesterday=date.minusDays(1);
+        LocalDate tomorrow=yesterday.plusDays(2);
+        System.out.println("yesterday:"+yesterday+" "+yesterday.getDayOfWeek());
+        System.out.println("tomorrow:"+tomorrow+" "+ tomorrow.getDayOfWeek());
+        
+    }
+}
+
+
+
+
+output
+------
+
+19 12 2022
+MONDAY
+
+2022-12-19
+
+yesterday:2022-12-18 SUNDAY
+
+tomorrow:2022-12-20 TUESDAY
